@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C99F4132019A709002FACC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F4122019A709002FACC5 /* AppDelegate.m */; };
+		5C99F4162019A709002FACC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F4152019A709002FACC5 /* ViewController.m */; };
+		5C99F4192019A709002FACC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C99F4172019A709002FACC5 /* Main.storyboard */; };
+		5C99F41B2019A70A002FACC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C99F41A2019A709002FACC5 /* Assets.xcassets */; };
+		5C99F41E2019A70A002FACC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C99F41C2019A70A002FACC5 /* LaunchScreen.storyboard */; };
+		5C99F4212019A70A002FACC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F4202019A70A002FACC5 /* main.m */; };
+		A467892BB5FA7400C4A017DA /* libPods-YIMKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F99181B2DE224B7F1FBE4022 /* libPods-YIMKit.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		48CDFC540F6B543C7D823110 /* Pods-YIMKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YIMKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YIMKit/Pods-YIMKit.debug.xcconfig"; sourceTree = "<group>"; };
+		5C99F40E2019A709002FACC5 /* YIMKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YIMKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C99F4112019A709002FACC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5C99F4122019A709002FACC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5C99F4142019A709002FACC5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5C99F4152019A709002FACC5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5C99F4182019A709002FACC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5C99F41A2019A709002FACC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C99F41D2019A70A002FACC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5C99F41F2019A70A002FACC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C99F4202019A70A002FACC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E09EB5C092056F8472C91C23 /* Pods-YIMKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YIMKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-YIMKit/Pods-YIMKit.release.xcconfig"; sourceTree = "<group>"; };
+		F99181B2DE224B7F1FBE4022 /* libPods-YIMKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YIMKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C99F40B2019A709002FACC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A467892BB5FA7400C4A017DA /* libPods-YIMKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		030188ADA5F93BA26AEF34F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F99181B2DE224B7F1FBE4022 /* libPods-YIMKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C99F4052019A709002FACC5 = {
+			isa = PBXGroup;
+			children = (
+				5C99F4102019A709002FACC5 /* YIMKit */,
+				5C99F40F2019A709002FACC5 /* Products */,
+				DA5DBB351588DAFC8A90DB1F /* Pods */,
+				030188ADA5F93BA26AEF34F9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5C99F40F2019A709002FACC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C99F40E2019A709002FACC5 /* YIMKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C99F4102019A709002FACC5 /* YIMKit */ = {
+			isa = PBXGroup;
+			children = (
+				5C99F4282019AB1D002FACC5 /* resource */,
+				5C99F4272019A723002FACC5 /* src */,
+				5C99F4112019A709002FACC5 /* AppDelegate.h */,
+				5C99F4122019A709002FACC5 /* AppDelegate.m */,
+				5C99F4142019A709002FACC5 /* ViewController.h */,
+				5C99F4152019A709002FACC5 /* ViewController.m */,
+				5C99F4172019A709002FACC5 /* Main.storyboard */,
+				5C99F41A2019A709002FACC5 /* Assets.xcassets */,
+				5C99F41C2019A70A002FACC5 /* LaunchScreen.storyboard */,
+				5C99F41F2019A70A002FACC5 /* Info.plist */,
+				5C99F4202019A70A002FACC5 /* main.m */,
+			);
+			path = YIMKit;
+			sourceTree = "<group>";
+		};
+		5C99F4272019A723002FACC5 /* src */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		5C99F4282019AB1D002FACC5 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		DA5DBB351588DAFC8A90DB1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48CDFC540F6B543C7D823110 /* Pods-YIMKit.debug.xcconfig */,
+				E09EB5C092056F8472C91C23 /* Pods-YIMKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C99F40D2019A709002FACC5 /* YIMKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C99F4242019A70A002FACC5 /* Build configuration list for PBXNativeTarget "YIMKit" */;
+			buildPhases = (
+				3AEEB4546052592914DA8D4B /* [CP] Check Pods Manifest.lock */,
+				5C99F40A2019A709002FACC5 /* Sources */,
+				5C99F40B2019A709002FACC5 /* Frameworks */,
+				5C99F40C2019A709002FACC5 /* Resources */,
+				B654058D0E492330AB73D9D1 /* [CP] Embed Pods Frameworks */,
+				469DC9ED7A8A20A93EA7CF6D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YIMKit;
+			productName = YIMKit;
+			productReference = 5C99F40E2019A709002FACC5 /* YIMKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C99F4062019A709002FACC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = ybz;
+				TargetAttributes = {
+					5C99F40D2019A709002FACC5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5C99F4092019A709002FACC5 /* Build configuration list for PBXProject "YIMKit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C99F4052019A709002FACC5;
+			productRefGroup = 5C99F40F2019A709002FACC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C99F40D2019A709002FACC5 /* YIMKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C99F40C2019A709002FACC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C99F41E2019A70A002FACC5 /* LaunchScreen.storyboard in Resources */,
+				5C99F41B2019A70A002FACC5 /* Assets.xcassets in Resources */,
+				5C99F4192019A709002FACC5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AEEB4546052592914DA8D4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YIMKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		469DC9ED7A8A20A93EA7CF6D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YIMKit/Pods-YIMKit-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YIMKit/Pods-YIMKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B654058D0E492330AB73D9D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YIMKit/Pods-YIMKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C99F40A2019A709002FACC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C99F4162019A709002FACC5 /* ViewController.m in Sources */,
+				5C99F4212019A70A002FACC5 /* main.m in Sources */,
+				5C99F4132019A709002FACC5 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5C99F4172019A709002FACC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C99F4182019A709002FACC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5C99F41C2019A70A002FACC5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C99F41D2019A70A002FACC5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C99F4222019A70A002FACC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5C99F4232019A70A002FACC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C99F4252019A70A002FACC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48CDFC540F6B543C7D823110 /* Pods-YIMKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Q5KU2HBEN;
+				INFOPLIST_FILE = YIMKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ybzhome.com.YIMKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C99F4262019A70A002FACC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E09EB5C092056F8472C91C23 /* Pods-YIMKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Q5KU2HBEN;
+				INFOPLIST_FILE = YIMKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ybzhome.com.YIMKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C99F4092019A709002FACC5 /* Build configuration list for PBXProject "YIMKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C99F4222019A70A002FACC5 /* Debug */,
+				5C99F4232019A70A002FACC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C99F4242019A70A002FACC5 /* Build configuration list for PBXNativeTarget "YIMKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C99F4252019A70A002FACC5 /* Debug */,
+				5C99F4262019A70A002FACC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C99F4062019A709002FACC5 /* Project object */;
+}
