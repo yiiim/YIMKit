@@ -14,6 +14,9 @@
 		5C99F41E2019A70A002FACC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C99F41C2019A70A002FACC5 /* LaunchScreen.storyboard */; };
 		5C99F4212019A70A002FACC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F4202019A70A002FACC5 /* main.m */; };
 		5C99F42A2019B17B002FACC5 /* YIMKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C99F4292019B17B002FACC5 /* YIMKit.bundle */; };
+		5C99F42F2019B880002FACC5 /* YIMNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F42E2019B880002FACC5 /* YIMNavigationViewController.m */; };
+		5C99F4332019B9DF002FACC5 /* UIImage+YIMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F4322019B9DF002FACC5 /* UIImage+YIMImage.m */; };
+		5C99F4372019BA64002FACC5 /* YIMSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F4362019BA64002FACC5 /* YIMSetting.m */; };
 		A467892BB5FA7400C4A017DA /* libPods-YIMKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F99181B2DE224B7F1FBE4022 /* libPods-YIMKit.a */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +34,13 @@
 		5C99F4202019A70A002FACC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5C99F4292019B17B002FACC5 /* YIMKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YIMKit.bundle; sourceTree = "<group>"; };
 		5C99F42B2019B197002FACC5 /* YIMKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMKit.h; sourceTree = "<group>"; };
+		5C99F42D2019B880002FACC5 /* YIMNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMNavigationViewController.h; sourceTree = "<group>"; };
+		5C99F42E2019B880002FACC5 /* YIMNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMNavigationViewController.m; sourceTree = "<group>"; };
+		5C99F4312019B9DF002FACC5 /* UIImage+YIMImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+YIMImage.h"; sourceTree = "<group>"; };
+		5C99F4322019B9DF002FACC5 /* UIImage+YIMImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YIMImage.m"; sourceTree = "<group>"; };
+		5C99F4352019BA64002FACC5 /* YIMSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMSetting.h; sourceTree = "<group>"; };
+		5C99F4362019BA64002FACC5 /* YIMSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMSetting.m; sourceTree = "<group>"; };
+		5C99F4382019BC09002FACC5 /* YIMKitPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMKitPrefixHeader.pch; sourceTree = "<group>"; };
 		E09EB5C092056F8472C91C23 /* Pods-YIMKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YIMKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-YIMKit/Pods-YIMKit.release.xcconfig"; sourceTree = "<group>"; };
 		F99181B2DE224B7F1FBE4022 /* libPods-YIMKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YIMKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -87,6 +97,7 @@
 				5C99F41C2019A70A002FACC5 /* LaunchScreen.storyboard */,
 				5C99F41F2019A70A002FACC5 /* Info.plist */,
 				5C99F4202019A70A002FACC5 /* main.m */,
+				5C99F4382019BC09002FACC5 /* YIMKitPrefixHeader.pch */,
 			);
 			path = YIMKit;
 			sourceTree = "<group>";
@@ -95,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				5C99F42B2019B197002FACC5 /* YIMKit.h */,
+				5C99F4342019BA58002FACC5 /* Tool */,
+				5C99F42C2019B808002FACC5 /* UI */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -105,6 +118,34 @@
 				5C99F4292019B17B002FACC5 /* YIMKit.bundle */,
 			);
 			path = resource;
+			sourceTree = "<group>";
+		};
+		5C99F42C2019B808002FACC5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5C99F4302019B9CB002FACC5 /* Categorys */,
+				5C99F42D2019B880002FACC5 /* YIMNavigationViewController.h */,
+				5C99F42E2019B880002FACC5 /* YIMNavigationViewController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5C99F4302019B9CB002FACC5 /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				5C99F4312019B9DF002FACC5 /* UIImage+YIMImage.h */,
+				5C99F4322019B9DF002FACC5 /* UIImage+YIMImage.m */,
+			);
+			path = Categorys;
+			sourceTree = "<group>";
+		};
+		5C99F4342019BA58002FACC5 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				5C99F4352019BA64002FACC5 /* YIMSetting.h */,
+				5C99F4362019BA64002FACC5 /* YIMSetting.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		DA5DBB351588DAFC8A90DB1F /* Pods */ = {
@@ -247,6 +288,9 @@
 			files = (
 				5C99F4162019A709002FACC5 /* ViewController.m in Sources */,
 				5C99F4212019A70A002FACC5 /* main.m in Sources */,
+				5C99F42F2019B880002FACC5 /* YIMNavigationViewController.m in Sources */,
+				5C99F4332019B9DF002FACC5 /* UIImage+YIMImage.m in Sources */,
+				5C99F4372019BA64002FACC5 /* YIMSetting.m in Sources */,
 				5C99F4132019A709002FACC5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +428,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Q5KU2HBEN;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YIMKit/YIMKitPrefixHeader.pch";
 				INFOPLIST_FILE = YIMKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ybzhome.com.YIMKit;
@@ -399,6 +445,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Q5KU2HBEN;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YIMKit/YIMKitPrefixHeader.pch";
 				INFOPLIST_FILE = YIMKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ybzhome.com.YIMKit;
