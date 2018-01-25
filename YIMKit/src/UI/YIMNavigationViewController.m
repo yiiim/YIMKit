@@ -10,6 +10,7 @@
 #import "UIImage+YIMImage.h"
 #import "YIMSetting.h"
 #import <objc/runtime.h>
+#import <Masonry.h>
 
 typedef enum YIMNavigationControllerTransitionType{
     YIMNavigationControllerTransitionTypePush,
