@@ -7,9 +7,8 @@ s.license      = 'MIT'
 s.authors      = {'ybz' => 'ybz975218925@live.com'}
 s.platform     = :ios, '8.0'
 s.source       = {:git => 'https://github.com/yiiim/YIMKit.git', :tag => s.version}
-s.source_files = 'YIMKit/src/**/*.{h,m,c}'
+s.source_files = 'YIMKit/src/**/*.{h,m,c}','yimediter/*.{h,m}'
 s.resource     = 'YIMKit/resource/*.bundle'
-s.dependency   = 'Masonry' , '~> 1.1.0'
-s.dependency   = 'DZNEmptyDataSet' , '~> 1.8.1'
+s.dependency   = 'Masonry', '~> 1.1.0'
 s.requires_arc = true
 end

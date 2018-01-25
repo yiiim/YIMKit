@@ -13,6 +13,7 @@
 		5C99F41B2019A70A002FACC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C99F41A2019A709002FACC5 /* Assets.xcassets */; };
 		5C99F41E2019A70A002FACC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C99F41C2019A70A002FACC5 /* LaunchScreen.storyboard */; };
 		5C99F4212019A70A002FACC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F4202019A70A002FACC5 /* main.m */; };
+		5C99F42A2019B17B002FACC5 /* YIMKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C99F4292019B17B002FACC5 /* YIMKit.bundle */; };
 		A467892BB5FA7400C4A017DA /* libPods-YIMKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F99181B2DE224B7F1FBE4022 /* libPods-YIMKit.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,8 @@
 		5C99F41D2019A70A002FACC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C99F41F2019A70A002FACC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C99F4202019A70A002FACC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5C99F4292019B17B002FACC5 /* YIMKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YIMKit.bundle; sourceTree = "<group>"; };
+		5C99F42B2019B197002FACC5 /* YIMKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMKit.h; sourceTree = "<group>"; };
 		E09EB5C092056F8472C91C23 /* Pods-YIMKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YIMKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-YIMKit/Pods-YIMKit.release.xcconfig"; sourceTree = "<group>"; };
 		F99181B2DE224B7F1FBE4022 /* libPods-YIMKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YIMKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -91,6 +94,7 @@
 		5C99F4272019A723002FACC5 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				5C99F42B2019B197002FACC5 /* YIMKit.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -98,6 +102,7 @@
 		5C99F4282019AB1D002FACC5 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				5C99F4292019B17B002FACC5 /* YIMKit.bundle */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C99F42A2019B17B002FACC5 /* YIMKit.bundle in Resources */,
 				5C99F41E2019A70A002FACC5 /* LaunchScreen.storyboard in Resources */,
 				5C99F41B2019A70A002FACC5 /* Assets.xcassets in Resources */,
 				5C99F4192019A709002FACC5 /* Main.storyboard in Resources */,
