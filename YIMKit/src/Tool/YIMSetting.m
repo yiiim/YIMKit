@@ -7,9 +7,9 @@
 //
 
 #import "YIMSetting.h"
-#import <YYCache.h>
-#import <NSObject+YYModel.h>
-#import <YYKit.h>
+#import "YYCache.h"
+#import "NSObject+YYModel.h"
+#import "YYKit.h"
 
 #define __YIMSettingCachePath__ @"__YIMSettingCachePath__"
 #define __YIMSettingCacheKey__ @"__YIMSettingCacheKey__"

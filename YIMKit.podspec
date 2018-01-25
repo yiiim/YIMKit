@@ -10,8 +10,11 @@ Pod::Spec.new do |s|
   s.source_files = 'YIMKit/src/**/*.{h,m,c}'
   s.resource     = 'YIMKit/resource/*.bundle'
   s.requires_arc = true
+  #s.xcconfig = { "HEADER_SEARCH_PATHS" => "${SRCROOT}/Headers/Public/YYKit" }
+
   s.dependency "Masonry"
   s.dependency "DZNEmptyDataSet"
-  s.dependency "YYKit"  
+  s.dependency "YYKit"
+  
 
 end
