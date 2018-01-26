@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'YIMKit'
-  s.version      = '0.1.1'
+  s.version      = '0.1.2'
   s.summary      = 'library for ybz'
   s.homepage     = 'https://github.com/yiiim/YIMKit'
   s.license      = 'MIT'
