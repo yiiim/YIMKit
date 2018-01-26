@@ -17,6 +17,7 @@
 		5C99F42F2019B880002FACC5 /* YIMNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F42E2019B880002FACC5 /* YIMNavigationViewController.m */; };
 		5C99F4332019B9DF002FACC5 /* UIImage+YIMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F4322019B9DF002FACC5 /* UIImage+YIMImage.m */; };
 		5C99F4372019BA64002FACC5 /* YIMSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F4362019BA64002FACC5 /* YIMSetting.m */; };
+		5C99F448201AC381002FACC5 /* YIMTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F447201AC381002FACC5 /* YIMTools.m */; };
 		A467892BB5FA7400C4A017DA /* libPods-YIMKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F99181B2DE224B7F1FBE4022 /* libPods-YIMKit.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,8 @@
 		5C99F4322019B9DF002FACC5 /* UIImage+YIMImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YIMImage.m"; sourceTree = "<group>"; };
 		5C99F4352019BA64002FACC5 /* YIMSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMSetting.h; sourceTree = "<group>"; };
 		5C99F4362019BA64002FACC5 /* YIMSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMSetting.m; sourceTree = "<group>"; };
+		5C99F446201AC381002FACC5 /* YIMTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMTools.h; sourceTree = "<group>"; };
+		5C99F447201AC381002FACC5 /* YIMTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMTools.m; sourceTree = "<group>"; };
 		E09EB5C092056F8472C91C23 /* Pods-YIMKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YIMKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-YIMKit/Pods-YIMKit.release.xcconfig"; sourceTree = "<group>"; };
 		F99181B2DE224B7F1FBE4022 /* libPods-YIMKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YIMKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -142,6 +145,8 @@
 			children = (
 				5C99F4352019BA64002FACC5 /* YIMSetting.h */,
 				5C99F4362019BA64002FACC5 /* YIMSetting.m */,
+				5C99F446201AC381002FACC5 /* YIMTools.h */,
+				5C99F447201AC381002FACC5 /* YIMTools.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 				5C99F42F2019B880002FACC5 /* YIMNavigationViewController.m in Sources */,
 				5C99F4332019B9DF002FACC5 /* UIImage+YIMImage.m in Sources */,
 				5C99F4372019BA64002FACC5 /* YIMSetting.m in Sources */,
+				5C99F448201AC381002FACC5 /* YIMTools.m in Sources */,
 				5C99F4132019A709002FACC5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

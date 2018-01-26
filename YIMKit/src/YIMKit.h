@@ -9,5 +9,15 @@
 #ifndef YIMKit_h
 #define YIMKit_h
 
+//tools
+#import "YIMSetting.h"
+#import "YIMTools.h"
+
+//ui
+#import "YIMNavigationViewController.h"
+
+
+//category
+#import "UIImage+YIMImage.h"
 
 #endif /* YIMKit_h */

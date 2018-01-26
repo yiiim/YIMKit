@@ -11,7 +11,7 @@
 #import "NSObject+YYModel.h"
 #import "YYKit.h"
 
-#define __YIMSettingCachePath__ @"__YIMSettingCachePath__"
+#define __YIMSettingCachePath__ [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory,  NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"YIMSetting.obj"]
 #define __YIMSettingCacheKey__ @"__YIMSettingCacheKey__"
 
 @implementation YIMSetting
