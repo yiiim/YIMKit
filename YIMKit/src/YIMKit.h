@@ -21,6 +21,12 @@
 #import "UIImage+YIMImage.h"
 
 
-//Network
+//network
+#import "YbzHttpNetworking.h"
+#import "YbzRequestDecorator.h"
+
+//model
+#import "YbzError.h"
+#import "YIMModelBase.h"
 
 #endif /* YIMKit_h */

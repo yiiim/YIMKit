@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ModelBase : NSObject
+@interface YIMModelBase : NSObject
 
 @property(nonatomic,strong)NSMutableDictionary *otherValues;
 

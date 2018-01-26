@@ -6,15 +6,15 @@
 //  Copyright © 2018年 ybz. All rights reserved.
 //
 
-#import "ModelBase.h"
+#import "YIMModelBase.h"
 #import "YYKit/YYKit.h"
 #import <objc/runtime.h>
 
-@interface ModelBase()
+@interface YIMModelBase()
 
 @end
 
-@implementation ModelBase
+@implementation YIMModelBase
 
 -(instancetype)initWithJson:(id)json requestIdentity:(NSString *)identity{
     self = [[self class]modelWithJSON:json];

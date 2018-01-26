@@ -7,9 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import "ModelBase.h"
+#import "YIMModelBase.h"
 
-@interface TestModel : ModelBase
+@interface TestModel : YIMModelBase
 @property(nonatomic,strong)NSString *a;
 @property(nonatomic,assign)int b;
 @property(nonatomic,strong)NSString *c;
@@ -34,7 +34,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    TestModel *m = [[TestModel alloc]initWithJson:@{@"aa":@"value a",@"bb":@(2),@"c":@"value c"}];
+//    TestModel *m = [[TestModel alloc]initWithJson:@{@"aa":@"value a",@"bb":@(2),@"c":@"value c"}];
     return YES;
 }
 
