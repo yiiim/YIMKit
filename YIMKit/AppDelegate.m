@@ -7,6 +7,23 @@
 //
 
 #import "AppDelegate.h"
+#import "ModelBase.h"
+
+@interface TestModel : ModelBase
+@property(nonatomic,strong)NSString *a;
+@property(nonatomic,assign)int b;
+@property(nonatomic,strong)NSString *c;
+@end
+@implementation TestModel
+-(NSDictionary<NSString*,NSArray<NSString*>*>*)mapJsonKeyValues{
+    return @{
+             @"aa":@[@"a"]
+             };
+}
+-(NSDictionary<NSString*,NSString*>*)mapJsonKeyValue{
+    return @{@"bb":@"b"};
+}
+@end
 
 @interface AppDelegate ()
 
@@ -17,7 +34,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    CGSize size = [UIScreen mainScreen].bounds.size;
+    TestModel *m = [[TestModel alloc]initWithJson:@{@"aa":@"value a",@"bb":@(2),@"c":@"value c"}];
     return YES;
 }
 

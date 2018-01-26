@@ -18,6 +18,11 @@
 		5C99F4332019B9DF002FACC5 /* UIImage+YIMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F4322019B9DF002FACC5 /* UIImage+YIMImage.m */; };
 		5C99F4372019BA64002FACC5 /* YIMSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F4362019BA64002FACC5 /* YIMSetting.m */; };
 		5C99F448201AC381002FACC5 /* YIMTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F447201AC381002FACC5 /* YIMTools.m */; };
+		5C99F455201ACFF7002FACC5 /* YbzHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F44F201ACFF7002FACC5 /* YbzHttpResponse.m */; };
+		5C99F456201ACFF7002FACC5 /* YbzHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F450201ACFF7002FACC5 /* YbzHttpRequest.m */; };
+		5C99F457201ACFF7002FACC5 /* YbzHttpResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F451201ACFF7002FACC5 /* YbzHttpResult.m */; };
+		5C99F45B201AD161002FACC5 /* YbzError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F459201AD161002FACC5 /* YbzError.m */; };
+		5C99F45E201AD1B4002FACC5 /* ModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F45D201AD1B4002FACC5 /* ModelBase.m */; };
 		A467892BB5FA7400C4A017DA /* libPods-YIMKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F99181B2DE224B7F1FBE4022 /* libPods-YIMKit.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +48,17 @@
 		5C99F4362019BA64002FACC5 /* YIMSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMSetting.m; sourceTree = "<group>"; };
 		5C99F446201AC381002FACC5 /* YIMTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMTools.h; sourceTree = "<group>"; };
 		5C99F447201AC381002FACC5 /* YIMTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMTools.m; sourceTree = "<group>"; };
+		5C99F44E201ACFF6002FACC5 /* YbzHttpNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YbzHttpNetworking.h; sourceTree = "<group>"; };
+		5C99F44F201ACFF7002FACC5 /* YbzHttpResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YbzHttpResponse.m; sourceTree = "<group>"; };
+		5C99F450201ACFF7002FACC5 /* YbzHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YbzHttpRequest.m; sourceTree = "<group>"; };
+		5C99F451201ACFF7002FACC5 /* YbzHttpResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YbzHttpResult.m; sourceTree = "<group>"; };
+		5C99F452201ACFF7002FACC5 /* YbzHttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YbzHttpResponse.h; sourceTree = "<group>"; };
+		5C99F453201ACFF7002FACC5 /* YbzHttpResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YbzHttpResult.h; sourceTree = "<group>"; };
+		5C99F454201ACFF7002FACC5 /* YbzHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YbzHttpRequest.h; sourceTree = "<group>"; };
+		5C99F459201AD161002FACC5 /* YbzError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YbzError.m; sourceTree = "<group>"; };
+		5C99F45A201AD161002FACC5 /* YbzError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YbzError.h; sourceTree = "<group>"; };
+		5C99F45C201AD1B4002FACC5 /* ModelBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelBase.h; sourceTree = "<group>"; };
+		5C99F45D201AD1B4002FACC5 /* ModelBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelBase.m; sourceTree = "<group>"; };
 		E09EB5C092056F8472C91C23 /* Pods-YIMKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YIMKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-YIMKit/Pods-YIMKit.release.xcconfig"; sourceTree = "<group>"; };
 		F99181B2DE224B7F1FBE4022 /* libPods-YIMKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YIMKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -107,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				5C99F42B2019B197002FACC5 /* YIMKit.h */,
+				5C99F458201AD13F002FACC5 /* Models */,
+				5C99F44D201ACFDB002FACC5 /* Request */,
 				5C99F4342019BA58002FACC5 /* Tool */,
 				5C99F42C2019B808002FACC5 /* UI */,
 			);
@@ -149,6 +167,31 @@
 				5C99F447201AC381002FACC5 /* YIMTools.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		5C99F44D201ACFDB002FACC5 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				5C99F44E201ACFF6002FACC5 /* YbzHttpNetworking.h */,
+				5C99F454201ACFF7002FACC5 /* YbzHttpRequest.h */,
+				5C99F450201ACFF7002FACC5 /* YbzHttpRequest.m */,
+				5C99F452201ACFF7002FACC5 /* YbzHttpResponse.h */,
+				5C99F44F201ACFF7002FACC5 /* YbzHttpResponse.m */,
+				5C99F453201ACFF7002FACC5 /* YbzHttpResult.h */,
+				5C99F451201ACFF7002FACC5 /* YbzHttpResult.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		5C99F458201AD13F002FACC5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C99F45A201AD161002FACC5 /* YbzError.h */,
+				5C99F459201AD161002FACC5 /* YbzError.m */,
+				5C99F45C201AD1B4002FACC5 /* ModelBase.h */,
+				5C99F45D201AD1B4002FACC5 /* ModelBase.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		DA5DBB351588DAFC8A90DB1F /* Pods */ = {
@@ -289,13 +332,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C99F455201ACFF7002FACC5 /* YbzHttpResponse.m in Sources */,
 				5C99F4162019A709002FACC5 /* ViewController.m in Sources */,
 				5C99F4212019A70A002FACC5 /* main.m in Sources */,
 				5C99F42F2019B880002FACC5 /* YIMNavigationViewController.m in Sources */,
 				5C99F4332019B9DF002FACC5 /* UIImage+YIMImage.m in Sources */,
 				5C99F4372019BA64002FACC5 /* YIMSetting.m in Sources */,
+				5C99F45E201AD1B4002FACC5 /* ModelBase.m in Sources */,
+				5C99F457201ACFF7002FACC5 /* YbzHttpResult.m in Sources */,
+				5C99F456201ACFF7002FACC5 /* YbzHttpRequest.m in Sources */,
 				5C99F448201AC381002FACC5 /* YIMTools.m in Sources */,
 				5C99F4132019A709002FACC5 /* AppDelegate.m in Sources */,
+				5C99F45B201AD161002FACC5 /* YbzError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
