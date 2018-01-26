@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AFNetworking.h"
+
 
 @class YbzHttpResponse;
 @class YbzHttpResult;
+@class AFMultipartFormData;
 
 typedef enum YbzHttpRequestMethod{
     Post,
@@ -79,7 +80,7 @@ typedef NSData*(^YbzHttpRequestHttpBodyCreateBlock)(void);
 -(instancetype)initWithUrl:(NSString *)url requestIdentity:(NSString*)identity;
 
 -(YbzHttpResult*)send;
--(YbzHttpResult*)upload:(void(^)(id <AFMultipartFormData> formData))block;
+-(YbzHttpResult*)upload:(void(^)(id formData))block;
 -(YbzHttpResult*)download;
 
 
