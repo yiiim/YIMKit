@@ -7,7 +7,7 @@
 //
 
 #import "YbzHttpResponse.h"
-#import <NSObject+YYModel.h>
+#import "NSObject+YYModel.h"
 
 #define ResponseStatusOK 200
 #define ResponseStatusBadRequest 400

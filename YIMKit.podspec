@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'YIMKit'
-  s.version      = '0.0.9'
+  s.version      = '0.1.0'
   s.summary      = 'library for ybz'
   s.homepage     = 'https://github.com/yiiim/YIMKit'
   s.license      = 'MIT'
@@ -15,6 +15,9 @@ Pod::Spec.new do |s|
   s.dependency "Masonry"
   s.dependency "DZNEmptyDataSet"
   s.dependency "YYKit"
+  s.dependency "AFNetworking"
   
 
 end
+
+
