@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "YIMCodingCopying.h"
 #import <UIKit/UIKit.h>
 
-@interface YIMSetting : NSObject <NSCoding>
+@interface YIMSetting : YIMCodingCopying
 
 @property(strong,nonatomic)UIColor *tintColor;
 

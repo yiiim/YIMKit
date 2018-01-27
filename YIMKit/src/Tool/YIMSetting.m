@@ -76,35 +76,6 @@ static YIMSetting* _setting;
     return self;
 }
 
--(instancetype)initWithCoder:(NSCoder *)aDecoder{
-    if (self = [super init]) {
-        unsigned int count;
-        objc_property_t *properties = class_copyPropertyList([self class], &count);
-        for (int i = 0; i < count; i++) {
-            objc_property_t property = properties[i];
-            const char *cName = property_getName(property);
-            NSString *name = [NSString stringWithCString:cName encoding:NSUTF8StringEncoding];
-            id value = [aDecoder decodeObjectForKey:name];
-            if(value){
-                [self setValue:value forKey:name];
-            }
-        }
-    }
-    return self;
-}
--(void)encodeWithCoder:(NSCoder *)aCoder{
-    unsigned int count;
-    objc_property_t *properties = class_copyPropertyList([self class], &count);
-    for (int i = 0; i < count; i++) {
-        objc_property_t property = properties[i];
-        const char *cName = property_getName(property);
-        NSString *name = [NSString stringWithCString:cName encoding:NSUTF8StringEncoding];
-        id value = [self valueForKey:name];
-        if(value){
-            [aCoder encodeObject:value forKey:name];
-        }
-    }
-}
 -(YIMSetting*)mergeSetting:(YIMSetting*)setting{
     unsigned int count;
     objc_property_t *properties = class_copyPropertyList([self class], &count);

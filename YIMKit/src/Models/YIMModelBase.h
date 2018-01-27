@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "YIMCodingCopying.h"
 
-@interface YIMModelBase : NSObject
+@interface YIMModelBase : YIMCodingCopying
 
 @property(nonatomic,strong)NSMutableDictionary *otherValues;
 

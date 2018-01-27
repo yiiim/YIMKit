@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C2BD86F201C4497002CC573 /* YIMLoginUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2BD86E201C4497002CC573 /* YIMLoginUser.m */; };
+		5C2BD872201C512D002CC573 /* YIMCodingCopying.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2BD871201C512D002CC573 /* YIMCodingCopying.m */; };
 		5C99F4132019A709002FACC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F4122019A709002FACC5 /* AppDelegate.m */; };
 		5C99F4162019A709002FACC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F4152019A709002FACC5 /* ViewController.m */; };
 		5C99F4192019A709002FACC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C99F4172019A709002FACC5 /* Main.storyboard */; };
@@ -29,6 +31,10 @@
 
 /* Begin PBXFileReference section */
 		48CDFC540F6B543C7D823110 /* Pods-YIMKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YIMKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YIMKit/Pods-YIMKit.debug.xcconfig"; sourceTree = "<group>"; };
+		5C2BD86D201C4497002CC573 /* YIMLoginUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMLoginUser.h; sourceTree = "<group>"; };
+		5C2BD86E201C4497002CC573 /* YIMLoginUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMLoginUser.m; sourceTree = "<group>"; };
+		5C2BD870201C512D002CC573 /* YIMCodingCopying.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMCodingCopying.h; sourceTree = "<group>"; };
+		5C2BD871201C512D002CC573 /* YIMCodingCopying.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMCodingCopying.m; sourceTree = "<group>"; };
 		5C99F40E2019A709002FACC5 /* YIMKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YIMKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C99F4112019A709002FACC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5C99F4122019A709002FACC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -195,6 +201,10 @@
 				5C99F459201AD161002FACC5 /* YbzError.m */,
 				5C99F45C201AD1B4002FACC5 /* YIMModelBase.h */,
 				5C99F45D201AD1B4002FACC5 /* YIMModelBase.m */,
+				5C2BD86D201C4497002CC573 /* YIMLoginUser.h */,
+				5C2BD86E201C4497002CC573 /* YIMLoginUser.m */,
+				5C2BD870201C512D002CC573 /* YIMCodingCopying.h */,
+				5C2BD871201C512D002CC573 /* YIMCodingCopying.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -342,7 +352,9 @@
 				5C99F4162019A709002FACC5 /* ViewController.m in Sources */,
 				5C99F4212019A70A002FACC5 /* main.m in Sources */,
 				5C99F42F2019B880002FACC5 /* YIMNavigationViewController.m in Sources */,
+				5C2BD872201C512D002CC573 /* YIMCodingCopying.m in Sources */,
 				5C99F4332019B9DF002FACC5 /* UIImage+YIMImage.m in Sources */,
+				5C2BD86F201C4497002CC573 /* YIMLoginUser.m in Sources */,
 				5C99F4372019BA64002FACC5 /* YIMSetting.m in Sources */,
 				5C99F45E201AD1B4002FACC5 /* YIMModelBase.m in Sources */,
 				5C99F457201ACFF7002FACC5 /* YbzHttpResult.m in Sources */,

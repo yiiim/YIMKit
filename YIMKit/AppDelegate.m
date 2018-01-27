@@ -8,21 +8,16 @@
 
 #import "AppDelegate.h"
 #import "YIMModelBase.h"
+#import "YIMSetting.h"
+#import <objc/runtime.h>
+#import "YIMLoginUser.h"
 
-@interface TestModel : YIMModelBase
+@interface TestModel : YIMLoginUser
 @property(nonatomic,strong)NSString *a;
 @property(nonatomic,assign)int b;
 @property(nonatomic,strong)NSString *c;
 @end
 @implementation TestModel
--(NSDictionary<NSString*,NSArray<NSString*>*>*)mapJsonKeyValues{
-    return @{
-             @"aa":@[@"a"]
-             };
-}
--(NSDictionary<NSString*,NSString*>*)mapJsonKeyValue{
-    return @{@"bb":@"b"};
-}
 @end
 
 @interface AppDelegate ()
@@ -33,8 +28,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-//    TestModel *m = [[TestModel alloc]initWithJson:@{@"aa":@"value a",@"bb":@(2),@"c":@"value c"}];
+    [TestModel loginWithJson:@{@"loginKey":@"a",@"a":@"aaaa"}];
+    TestModel *lu = [YIMLoginUser singleLoginUser];
+    
+    
     return YES;
 }
 
