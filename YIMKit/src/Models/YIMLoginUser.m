@@ -71,7 +71,6 @@ static bool _isUserSetSingle;
     });
     return _singleLoginUser;
 }
-
 -(instancetype)initWithLocalData:(NSDictionary *)option{
     NSData *data = [[NSUserDefaults standardUserDefaults]objectForKey:__YIMLoginUserSaveLoginUserKey__];
     self = [NSKeyedUnarchiver unarchiveObjectWithData:data];

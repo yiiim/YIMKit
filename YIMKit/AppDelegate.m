@@ -11,13 +11,27 @@
 #import "YIMSetting.h"
 #import <objc/runtime.h>
 #import "YIMLoginUser.h"
+#import <YYKit.h>
 
-@interface TestModel : YIMLoginUser
-@property(nonatomic,strong)NSString *a;
+typedef enum : NSUInteger {
+    aa,
+    bb,
+    cc,
+} MyEnum;
+
+struct MyStruct {
+    int a;
+    char *b;
+}MyStruct;
+
+@interface TestModel : YIMSetting
+@property(nonatomic,assign)int abc;
 @property(nonatomic,assign)int b;
-@property(nonatomic,strong)NSString *c;
 @end
 @implementation TestModel
+-(void)setValue:(id)value forKey:(NSString *)key{
+    [super setValue:value forKey:key];
+}
 @end
 
 @interface AppDelegate ()
@@ -28,10 +42,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [TestModel loginWithJson:@{@"loginKey":@"a",@"a":@"aaaa"}];
-    TestModel *lu = [YIMLoginUser singleLoginUser];
-    
-    
+    TestModel *test = [TestModel current];
+    test.b = 2;
+    TestModel *t = [[TestModel alloc]init];
+    t.abc = 2;
+    [test mergeSetting:t];
     return YES;
 }
 

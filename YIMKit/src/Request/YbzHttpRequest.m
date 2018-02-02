@@ -163,8 +163,11 @@ static dispatch_group_t af_complete_group;
 
 
 -(NSMutableArray<NSString*>*)acceptTypes{
-    if(!_acceptTypes)
+    if(!_acceptTypes){
         _acceptTypes = [NSMutableArray array];
+        [_acceptTypes addObject:@"html/text"];
+        [_acceptTypes addObject:@"application/json"];
+    }
     return _acceptTypes;
 }
 -(NSMutableDictionary<NSString*,id>*)cookies{

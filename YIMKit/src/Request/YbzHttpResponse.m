@@ -117,7 +117,7 @@
 }
 -(id)objectUseJsonWithYYModelClass:(Class)cls jsonOptions:(NSJSONReadingOptions)options error:(NSError *__autoreleasing *)e{
     id jsonObject = [self jsonObject:options error:e];
-    if (e != NULL && jsonObject) {
+    if (!e && jsonObject) {
         
         NSAssert(jsonObject, @"not get json object");
         

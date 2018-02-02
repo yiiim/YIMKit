@@ -13,6 +13,7 @@
 
 @property(nonatomic,strong)NSMutableDictionary *otherValues;
 
+
 -(instancetype)initWithJson:(id)json;
 -(instancetype)initWithJson:(id)json requestIdentity:(const NSString*)identity;
 +(NSArray*)arrayWithJson:(id)json;
@@ -37,5 +38,6 @@
  }
  */
 -(NSDictionary<NSString*,NSString*>*)mapJsonKeyValue;
+
 
 @end

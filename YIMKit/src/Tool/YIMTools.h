@@ -31,6 +31,8 @@ CGFloat autoHeightUseRatio(CGFloat width,CGSize ratioSize);
 /**根据指定比例获取宽度，第一个参数为高度，第二个参数是比例的宽高*/
 CGFloat autoWidthUseRatio(CGFloat height,CGSize ratioSize);
 
+bool property_is_valuetype(NSString *name,Class cls);
+
 
 @interface YIMTools : NSObject
 

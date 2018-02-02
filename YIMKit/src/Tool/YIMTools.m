@@ -7,6 +7,7 @@
 //
 
 #import "YIMTools.h"
+#import <objc/runtime.h>
 
 CGSize DesignSizeScreenSize(AppDesignSizeDevice designSize){
     switch (designSize) {
@@ -45,7 +46,21 @@ CGFloat autoWidthUseRatio(CGFloat height,CGSize designSize){
     return height/(designSize.height/designSize.width);
 }
 
-
+bool property_is_valuetype(NSString *name,Class cls){
+    objc_property_t p = class_getProperty(cls, [name UTF8String]);
+    unsigned int count = 0;
+    objc_property_attribute_t *attributes = property_copyAttributeList(p, &count);
+    for (int i = 0; i < count; i++) {
+        objc_property_attribute_t at = attributes[i];
+        if (strcmp(at.name, "T") == 0) {
+            if (![[NSString stringWithUTF8String:at.value]hasPrefix:@"@"]) {
+                return true;
+            }
+            break;
+        }
+    }
+    return false;
+}
 
 
 

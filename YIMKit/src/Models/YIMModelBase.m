@@ -8,27 +8,23 @@
 
 #import "YIMModelBase.h"
 #import "YYKit/YYKit.h"
+#import "NSObject+YIMObject.h"
 #import <objc/runtime.h>
 
-@interface YIMModelBase()
-
+@interface YIMModelBase(){
+    
+}
 @end
 
 @implementation YIMModelBase
+
+
 
 -(instancetype)initWithJson:(id)json requestIdentity:(NSString *)identity{
     self = [[self class]modelWithJSON:json];
     _otherValues = [NSMutableDictionary dictionary];
     if(self && [json isKindOfClass:[NSDictionary class]]){
-        unsigned int count;
-        objc_property_t *properties = class_copyPropertyList([self class], &count);
-        NSMutableArray *mArray = [NSMutableArray array];
-        for (int i = 0; i < count; i++) {
-            objc_property_t property = properties[i];
-            const char *cName = property_getName(property);
-            NSString *name = [NSString stringWithCString:cName encoding:NSUTF8StringEncoding];
-            [mArray addObject:name];
-        }
+        NSArray *mArray = [[self class] yimAllPropertes];
         NSDictionary *jsonDic = json;
         NSArray *otherKeyArray = [jsonDic.allKeys filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"NOT SELF IN %@",mArray]];
         for (NSString *key in otherKeyArray) {
@@ -84,4 +80,5 @@
     }
     return mapKeys;
 }
+
 @end
