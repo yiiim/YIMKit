@@ -23,6 +23,7 @@ static dispatch_queue_t persistenceDataQueue;
     @private
     /**这个字段标记self是否来自于本地持久化的Setting*/
     bool _fromLocalData;
+    NSArray<NSString*>* _registeredObserverPropertes;
 }
 /**所有被设置过的属性值都会被储存在这个字典中，以标记这个属性不再是默认值*/
 @property(nonatomic,strong)NSMutableDictionary *mergeConfigDic;
@@ -127,11 +128,14 @@ static dispatch_queue_t persistenceDataQueue;
 -(void)configSelfPropertyObserver{
     NSArray<NSString*>* propertes = [[self class] yimAllPropertes];
     NSArray<NSString*>* notPersistenceProperty = [self notPersistenceProperty];
+    NSMutableArray<NSString*>* registeredObserverList = [NSMutableArray array];
     for (NSString *property in propertes) {
         if(![notPersistenceProperty containsObject:property]){
             [self addObserver:self forKeyPath:property options:NSKeyValueObservingOptionNew context:NULL];
+            [registeredObserverList addObject:property];
         }
     }
+    _registeredObserverPropertes = registeredObserverList;
 }
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
     if (object == self) {
@@ -146,8 +150,7 @@ static dispatch_queue_t persistenceDataQueue;
     }
 }
 -(void)dealloc{
-    NSArray<NSString*>* propertes = [[self class] yimAllPropertes];
-    for (NSString *property in propertes) {
+    for (NSString *property in _registeredObserverPropertes) {
         [self removeObserver:self forKeyPath:property];
     }
 }
