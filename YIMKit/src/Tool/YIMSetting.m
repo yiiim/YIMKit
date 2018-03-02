@@ -36,14 +36,19 @@ static dispatch_queue_t persistenceDataQueue;
 }
 
 +(instancetype)defualt{
-    return [[YIMSetting alloc]init];
+    return [[self alloc]init];
 }
+static YIMSetting *_memoryCurrentSetting = nil;
 +(instancetype)current{
+    if(_memoryCurrentSetting && [_memoryCurrentSetting isKindOfClass:[self class]]){
+        return _memoryCurrentSetting;
+    }
     YYDiskCache *cache = [[YYDiskCache alloc]initWithPath:__YIMSettingCachePath__];
-    YIMSetting *obj = (YIMSetting*)[cache objectForKey:__YIMSettingCacheKey__];
+    YIMSetting *obj = (id)[cache objectForKey:__YIMSettingCacheKey__];
     if(!obj){
         obj = [self defualt];
         [self useSetting:obj];
+        _memoryCurrentSetting = obj;
     }
     obj->_fromLocalData = true;
     return obj;

@@ -80,7 +80,7 @@ typedef enum YIMNavigationControllerTransitionType{
             toVc.navigationItemViewYIM.alpha = 1;
             toVc.navigationItemViewYIM.titleView.frame = toOriginalTitleFrame;
             
-            fromView.frame = CGRectMake([UIScreen mainScreen].bounds.size.width, CGRectGetMaxY(fromView.frame), CGRectGetWidth(fromView.frame), CGRectGetHeight(fromView.frame));
+            fromView.frame = CGRectMake([UIScreen mainScreen].bounds.size.width, 0, CGRectGetWidth(fromView.frame), CGRectGetHeight(fromView.frame));
             fromVc.navigationItemViewYIM.alpha = 0;
             fromVc.navigationItemViewYIM.titleView.frame = CGRectMake([UIScreen mainScreen].bounds.size.width, fromVc.navigationItemViewYIM.titleView.frame.origin.y, fromVc.navigationItemViewYIM.titleView.frame.size.width, fromVc.navigationItemViewYIM.titleView.frame.size.height);
             

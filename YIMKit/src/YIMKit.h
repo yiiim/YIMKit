@@ -28,5 +28,6 @@
 //model
 #import "YbzError.h"
 #import "YIMModelBase.h"
+#import "YIMLoginUser.h"
 
 #endif /* YIMKit_h */

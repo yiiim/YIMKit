@@ -27,6 +27,7 @@
 		5C99F45B201AD161002FACC5 /* YbzError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F459201AD161002FACC5 /* YbzError.m */; };
 		5C99F45E201AD1B4002FACC5 /* YIMModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F45D201AD1B4002FACC5 /* YIMModelBase.m */; };
 		5C99F461201B2A11002FACC5 /* YbzRequestDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F45F201B2A11002FACC5 /* YbzRequestDecorator.m */; };
+		5CE6CCAC20492200004BE36C /* YIMLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE6CCAB20492200004BE36C /* YIMLocationManager.m */; };
 		A467892BB5FA7400C4A017DA /* libPods-YIMKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F99181B2DE224B7F1FBE4022 /* libPods-YIMKit.a */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,8 @@
 		5C99F45D201AD1B4002FACC5 /* YIMModelBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMModelBase.m; sourceTree = "<group>"; };
 		5C99F45F201B2A11002FACC5 /* YbzRequestDecorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YbzRequestDecorator.m; sourceTree = "<group>"; };
 		5C99F460201B2A11002FACC5 /* YbzRequestDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YbzRequestDecorator.h; sourceTree = "<group>"; };
+		5CE6CCAA20492200004BE36C /* YIMLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMLocationManager.h; sourceTree = "<group>"; };
+		5CE6CCAB20492200004BE36C /* YIMLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMLocationManager.m; sourceTree = "<group>"; };
 		E09EB5C092056F8472C91C23 /* Pods-YIMKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YIMKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-YIMKit/Pods-YIMKit.release.xcconfig"; sourceTree = "<group>"; };
 		F99181B2DE224B7F1FBE4022 /* libPods-YIMKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YIMKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -177,6 +180,8 @@
 				5C99F4362019BA64002FACC5 /* YIMSetting.m */,
 				5C99F446201AC381002FACC5 /* YIMTools.h */,
 				5C99F447201AC381002FACC5 /* YIMTools.m */,
+				5CE6CCAA20492200004BE36C /* YIMLocationManager.h */,
+				5CE6CCAB20492200004BE36C /* YIMLocationManager.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -358,6 +363,7 @@
 				5C99F4212019A70A002FACC5 /* main.m in Sources */,
 				5C99F42F2019B880002FACC5 /* YIMNavigationViewController.m in Sources */,
 				5C2BD872201C512D002CC573 /* YIMCodingCopying.m in Sources */,
+				5CE6CCAC20492200004BE36C /* YIMLocationManager.m in Sources */,
 				5C99F4332019B9DF002FACC5 /* UIImage+YIMImage.m in Sources */,
 				5C2BD86F201C4497002CC573 /* YIMLoginUser.m in Sources */,
 				5C6F10E72022F792009B6B90 /* NSObject+YIMObject.m in Sources */,

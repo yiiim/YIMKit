@@ -38,17 +38,21 @@ FOUNDATION_EXPORT NSString *kDidGetLoginUserButNotLoginNoticationName;
 +(void)loginWithJson:(id)json;
 /**使用loginKey登录，不保存任何登录用户信息*/
 +(void)loginWithLoginKey:(NSString*)loginKey;
+/**登出*/
++(void)loginOut;
 /**设置登录时触发，子类重写时必须调用父类*/
 +(void)didLogin:(__kindof YIMLoginUser*)loginUser;
 
 /**设置单例的登录用户，该方法是线程安全的*/
 +(void)setSingleLoginUser:(__kindof YIMLoginUser*)loginUser;
 /**获取单例的登录用户，子类需保证属性的线程访问安全,如果没有设置单例登录用户，这个方法将设置一个当前登录用户为单例用户。通常需要获取用户信息不需要更改用户属性时使用此方法以节约性能*/
-+(__kindof YIMLoginUser*)singleLoginUser;
++(instancetype)singleLoginUser;
 
 /**默认是使用UserDefaults保存的数据*/
 -(instancetype)initWithLocalData:(NSDictionary*)option;
 /**默认保存到UserDefaults*/
 -(void)saveToLocal;
+/**删除本地保存的登录信息*/
++(void)deleteLocal;
 
 @end

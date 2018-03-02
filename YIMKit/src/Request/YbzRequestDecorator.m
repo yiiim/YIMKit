@@ -87,9 +87,17 @@
     }
     return self;
 }
+-(instancetype)initWithHttpRequest:(YbzHttpRequest *)request{
+    if (self = [super initWithHttpRequest:request]) {
+        self.signSecretKey = @"yy";
+        self.signParamKey = @"sign";
+    }
+    return self;
+}
 -(instancetype)initWithSignKey:(NSString *)signKey request:(YbzHttpRequest *)request{
     if (self = [super initWithHttpRequest:request]) {
         self.signSecretKey = signKey;
+        self.signParamKey = @"sign";
     }
     return self;
 }

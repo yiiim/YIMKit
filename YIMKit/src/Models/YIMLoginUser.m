@@ -45,6 +45,10 @@ NSString* kDidGetLoginUserButNotLoginNoticationName = @"DidGetLoginUserButNotLog
     NSAssert(loginUser.loginKey, @"loginKey is nil");
     [loginUser saveToLocal];
 }
+/**登出*/
++(void)loginOut{
+    [self deleteLocal];
+}
 +(void)didLogin:(__kindof YIMLoginUser *)loginUser{
     [self setSingleLoginUser:loginUser];
 }
@@ -62,7 +66,7 @@ static bool _isUserSetSingle;
     _singleLoginUser = loginUser;
     [_singleLoginUserLock unlock];
 }
-+(__kindof YIMLoginUser*)singleLoginUser{
++(instancetype)singleLoginUser{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         if(!_isUserSetSingle){
@@ -80,5 +84,8 @@ static bool _isUserSetSingle;
     NSData *objData = [NSKeyedArchiver archivedDataWithRootObject:self];
     [[NSUserDefaults standardUserDefaults]setObject:objData forKey:__YIMLoginUserSaveLoginUserKey__];
     [[self class]didLogin:self];
+}
++(void)deleteLocal{
+    [[NSUserDefaults standardUserDefaults]setObject:nil forKey:__YIMLoginUserSaveLoginUserKey__];
 }
 @end
