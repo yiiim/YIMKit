@@ -16,7 +16,7 @@ static dispatch_queue_t af_complete_queue;
 static dispatch_group_t af_complete_group;
 
 @interface YbzHttpRequestResult : YbzHttpResult{
-    @private
+@private
     dispatch_semaphore_t semaphore;
     dispatch_queue_t asnycQueue;
     YbzHttpResponse* _response;
@@ -289,7 +289,7 @@ static dispatch_group_t af_complete_group;
     
     YbzHttpRequestResult *result = [[YbzHttpRequestResult alloc]initWithAfnManager:manager identity:_requestIdentity];
     
-    NSURLRequest *request = [self afRequestWithAfRequestSerializer:manager.requestSerializer error:&error];
+    NSURLRequest *request = [self afRequestWithAfRequestSerializer:manager.requestSerializer dataBlock:block error:&error];
     if (error) {
         return [[YbzHttpRequestResult alloc]initWithError:error];
     }
@@ -333,16 +333,6 @@ static dispatch_group_t af_complete_group;
     NSMutableString *urlString = [NSMutableString stringWithString:self.hostUrl];
     urlString = [NSMutableString stringWithString:[urlString stringByAppendingPathComponent:_path]];
     NSURL *url = [NSURL URLWithString:urlString];
-    
-//    NSMutableString *query = [NSMutableString string];
-//    for (int i = 0; i < self.queryString.allKeys.count; i++) {
-//        if (i != 0) {
-//            [query appendString:@"&"];
-//        }
-//        [query appendFormat:@"%@=%@",self.queryString.allKeys[i],self.queryString[self.queryString.allKeys[i]]];
-//    }
-//    if(query.length)
-//        url = [NSURL URLWithString:[[url absoluteString] stringByAppendingFormat:url.query ? @"&%@" : @"?%@", query]];
     return url;
 }
 -(NSURLRequest*)requestByYbzHttpRequest:(NSURLRequest*)urlRequest{
@@ -357,9 +347,5 @@ static dispatch_group_t af_complete_group;
     request.timeoutInterval = self.timeout;
     return request;
 }
-
-
-
-
-
 @end
+

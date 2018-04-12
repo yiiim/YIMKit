@@ -20,7 +20,7 @@
 static dispatch_queue_t persistenceDataQueue;
 
 @interface YIMSetting(){
-    @private
+@private
     /**这个字段标记self是否来自于本地持久化的Setting*/
     bool _fromLocalData;
     NSArray<NSString*>* _registeredObserverPropertes;
@@ -39,24 +39,32 @@ static dispatch_queue_t persistenceDataQueue;
     return [[self alloc]init];
 }
 static YIMSetting *_memoryCurrentSetting = nil;
+static YYDiskCache *_cache = nil;
+static NSLock *_lock = nil;;
 +(instancetype)current{
     if(_memoryCurrentSetting && [_memoryCurrentSetting isKindOfClass:[self class]]){
         return _memoryCurrentSetting;
     }
-    YYDiskCache *cache = [[YYDiskCache alloc]initWithPath:__YIMSettingCachePath__];
-    YIMSetting *obj = (id)[cache objectForKey:__YIMSettingCacheKey__];
+    YIMSetting *obj = [NSKeyedUnarchiver unarchiveObjectWithFile:__YIMSettingCachePath__];
     if(!obj){
         obj = [self defualt];
         [self useSetting:obj];
-        _memoryCurrentSetting = obj;
     }
     obj->_fromLocalData = true;
+    _memoryCurrentSetting = obj;
     return obj;
 }
 +(void)useSetting:(YIMSetting *)setting{
     dispatch_async(persistenceDataQueue, ^{
-        YYDiskCache *cache = [[YYDiskCache alloc]initWithPath:__YIMSettingCachePath__];
-        [cache setObject:setting forKey:__YIMSettingCacheKey__];
+        NSString *path = __YIMSettingCachePath__;
+        BOOL isSuccess = [NSKeyedArchiver archiveRootObject:setting toFile:path];
+        if (!isSuccess) {
+            if ([[NSFileManager defaultManager]fileExistsAtPath:path]) {
+                NSError *error = nil;
+                [[NSFileManager defaultManager]removeItemAtPath:path error:&error];
+            }
+            [NSKeyedArchiver archiveRootObject:setting toFile:path];
+        }
     });
 }
 +(id)settingObjWithJson:(id)json{
@@ -161,3 +169,4 @@ static YIMSetting *_memoryCurrentSetting = nil;
 }
 
 @end
+

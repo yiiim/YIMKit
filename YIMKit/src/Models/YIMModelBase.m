@@ -22,6 +22,9 @@
 
 -(instancetype)initWithJson:(id)json requestIdentity:(NSString *)identity{
     self = [[self class]modelWithJSON:json];
+    if(!self || ![self isKindOfClass:[self class]]){
+        self = [super init];
+    }
     _otherValues = [NSMutableDictionary dictionary];
     if(self && [json isKindOfClass:[NSDictionary class]]){
         NSArray *mArray = [[self class] yimAllPropertes];

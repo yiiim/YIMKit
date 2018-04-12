@@ -12,6 +12,7 @@
 //tools
 #import "YIMSetting.h"
 #import "YIMTools.h"
+#import "YIMLocationManager.h"
 
 //ui
 #import "YIMNavigationViewController.h"

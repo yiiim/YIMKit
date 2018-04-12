@@ -61,24 +61,24 @@
     ybzError.sysError = error;
     if (!resp) {
         if (error) {
-            ybzError.showUserMessage = @"request error";
+            ybzError.showUserMessage = @"请求失败";
             ybzError.insideMessage = error.description;
         }else{
-            ybzError.showUserMessage = @"request error";
-            ybzError.insideMessage = @"not get response，error before request，this is a bug";
+            ybzError.showUserMessage = @"请求失败";
+            ybzError.insideMessage = @"请求失败";
         }
     }else if (resp.statusCode == ResponseStatusOK) {
-        ybzError.showUserMessage = @"request error";
+        ybzError.showUserMessage = @"请求失败";
         ybzError.insideMessage = error.description;
     }else if(resp.statusCode == ResponseStatusRequestTimeout){
-        ybzError.showUserMessage = @"request time out";
-        ybzError.insideMessage = @"request time out";
+        ybzError.showUserMessage = @"请求超时";
+        ybzError.insideMessage = @"请求超时";
     }else if (resp.statusCode < 500) {
-        ybzError.showUserMessage = @"request error";
-        ybzError.insideMessage = [NSString stringWithFormat:@"request error，the response status code is %ld",resp.statusCode];
+        ybzError.showUserMessage = @"请求失败";
+        ybzError.insideMessage = [NSString stringWithFormat:@"请求失败，状态码为 %ld",(long)resp.statusCode];
     }else if (resp.statusCode >= 500){
-        ybzError.showUserMessage = @"server busy";
-        ybzError.insideMessage = [NSString stringWithFormat:@"server error，the response status code is %ld",resp.statusCode];
+        ybzError.showUserMessage = @"服务器繁忙";
+        ybzError.insideMessage = [NSString stringWithFormat:@"服务器错误，状态码为 %ld",(long)resp.statusCode];
     }else{
         //more error info， wait to do
     }
