@@ -34,17 +34,17 @@ NSString* kYIMDidLoginOutNoticationName = @"kYIMDidLoginOutNoticationName";
 }
 +(void)loginWithUser:(YIMLoginUser *)user{
     NSAssert(user.loginKey, @"loginKey is nil");
-    [[NSNotificationCenter defaultCenter]postNotificationName:kYIMDidLoginNoticationName object:nil];
     [self setSingleLoginUser:user];
     [user saveToLocal];
+    [[NSNotificationCenter defaultCenter]postNotificationName:kYIMDidLoginNoticationName object:nil];
 }
 +(void)loginWithLoginKey:(NSString *)loginKey{
     NSAssert(loginKey, @"loginKey is nil");
     YIMLoginUser *loginUser = [[[self class]alloc]init];
     loginUser.loginKey = loginKey;
-    [[NSNotificationCenter defaultCenter]postNotificationName:kYIMDidLoginNoticationName object:nil];
     [self setSingleLoginUser:loginUser];
     [loginUser saveToLocal];
+    [[NSNotificationCenter defaultCenter]postNotificationName:kYIMDidLoginNoticationName object:nil];
 }
 +(void)loginWithJson:(id)json{
     YIMLoginUser *loginUser = [[[self class]alloc]initWithJson:json];
