@@ -10,6 +10,7 @@
 
 @interface YbzError : NSObject
 
+@property(nonatomic,strong)NSDictionary *userInfo;
 @property(nonatomic,strong)NSError *sysError;
 @property(nonatomic,strong)NSString *showUserMessage;
 @property(nonatomic,strong)NSString *insideMessage;

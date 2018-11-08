@@ -9,6 +9,8 @@
 #ifndef YIMKit_h
 #define YIMKit_h
 
+#import "Define.h"
+
 //tools
 #import "YIMSetting.h"
 #import "YIMTools.h"
@@ -16,11 +18,13 @@
 
 //ui
 #import "YIMNavigationViewController.h"
-
-
-//category
+#import "YbzAlertView.h"
+#import "YIMTableSectionManager.h"
+#import "YIMBaseViewController.h"
+#import "YIMCommonCollectionDecorationView.h"
 #import "UIImage+YIMImage.h"
-
+#import "NSBundle+YIMBundle.h"
+#import "UIView+YIMView.h"
 
 //network
 #import "YbzHttpNetworking.h"

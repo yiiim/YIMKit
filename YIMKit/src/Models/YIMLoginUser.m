@@ -8,7 +8,9 @@
 
 #import "YIMLoginUser.h"
 
-NSString* kDidGetLoginUserButNotLoginNoticationName = @"DidGetLoginUserButNotLoginNoticationName";
+NSString* kYIMDidGetLoginUserButNotLoginNoticationName = @"DidGetLoginUserButNotLoginNoticationName";
+NSString* kYIMDidLoginNoticationName = @"kYIMDidLoginNoticationName";
+NSString* kYIMDidLoginOutNoticationName = @"kYIMDidLoginOutNoticationName";
 
 #define __YIMLoginUserSaveLoginUserKey__ @"YIMLoginUserSaveLoginUserKey"
 
@@ -26,31 +28,35 @@ NSString* kDidGetLoginUserButNotLoginNoticationName = @"DidGetLoginUserButNotLog
 +(instancetype)getLoginUser:(BOOL)isSendNotication option:(NSDictionary *)option{
     YIMLoginUser *user = [[[self class]alloc]initWithLocalData:option];
     if(!user){
-        [[NSNotificationCenter defaultCenter]postNotificationName:kDidGetLoginUserButNotLoginNoticationName object:nil];
+        [[NSNotificationCenter defaultCenter]postNotificationName:kYIMDidGetLoginUserButNotLoginNoticationName object:nil];
     }
     return user;
 }
 +(void)loginWithUser:(YIMLoginUser *)user{
     NSAssert(user.loginKey, @"loginKey is nil");
+    [[NSNotificationCenter defaultCenter]postNotificationName:kYIMDidLoginNoticationName object:nil];
+    [self setSingleLoginUser:user];
     [user saveToLocal];
 }
 +(void)loginWithLoginKey:(NSString *)loginKey{
     NSAssert(loginKey, @"loginKey is nil");
     YIMLoginUser *loginUser = [[[self class]alloc]init];
     loginUser.loginKey = loginKey;
+    [[NSNotificationCenter defaultCenter]postNotificationName:kYIMDidLoginNoticationName object:nil];
+    [self setSingleLoginUser:loginUser];
     [loginUser saveToLocal];
 }
 +(void)loginWithJson:(id)json{
     YIMLoginUser *loginUser = [[[self class]alloc]initWithJson:json];
     NSAssert(loginUser.loginKey, @"loginKey is nil");
+    [self setSingleLoginUser:loginUser];
     [loginUser saveToLocal];
+    [[NSNotificationCenter defaultCenter]postNotificationName:kYIMDidLoginNoticationName object:nil];
 }
 /**登出*/
 +(void)loginOut{
     [self deleteLocal];
-}
-+(void)didLogin:(__kindof YIMLoginUser *)loginUser{
-    [self setSingleLoginUser:loginUser];
+    [[NSNotificationCenter defaultCenter]postNotificationName:kYIMDidLoginOutNoticationName object:nil];
 }
 
 static __kindof YIMLoginUser *_singleLoginUser;
@@ -83,7 +89,6 @@ static bool _isUserSetSingle;
 -(void)saveToLocal{
     NSData *objData = [NSKeyedArchiver archivedDataWithRootObject:self];
     [[NSUserDefaults standardUserDefaults]setObject:objData forKey:__YIMLoginUserSaveLoginUserKey__];
-    [[self class]didLogin:self];
 }
 +(void)deleteLocal{
     [[NSUserDefaults standardUserDefaults]setObject:nil forKey:__YIMLoginUserSaveLoginUserKey__];

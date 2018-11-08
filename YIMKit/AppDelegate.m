@@ -42,11 +42,6 @@ struct MyStruct {
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    TestModel *test = [TestModel current];
-    test.b = 2;
-    TestModel *t = [[TestModel alloc]init];
-    t.abc = 2;
-    [test mergeSetting:t];
     return YES;
 }
 
@@ -77,5 +72,8 @@ struct MyStruct {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"Appdelegate responded");
+}
 
 @end

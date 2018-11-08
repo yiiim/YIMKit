@@ -9,7 +9,11 @@
 #import "YIMModelBase.h"
 
 /**当获取登录用户时未登录发出的通知*/
-FOUNDATION_EXPORT NSString *kDidGetLoginUserButNotLoginNoticationName;
+FOUNDATION_EXPORT NSString *kYIMDidGetLoginUserButNotLoginNoticationName;
+/**登录时发出的d通知*/
+FOUNDATION_EXPORT NSString *kYIMDidLoginNoticationName;
+/**登出时发出的通知*/
+FOUNDATION_EXPORT NSString *kYIMDidLoginOutNoticationName;
 
 @interface YIMLoginUser : YIMModelBase
 
@@ -40,8 +44,6 @@ FOUNDATION_EXPORT NSString *kDidGetLoginUserButNotLoginNoticationName;
 +(void)loginWithLoginKey:(NSString*)loginKey;
 /**登出*/
 +(void)loginOut;
-/**设置登录时触发，子类重写时必须调用父类*/
-+(void)didLogin:(__kindof YIMLoginUser*)loginUser;
 
 /**设置单例的登录用户，该方法是线程安全的*/
 +(void)setSingleLoginUser:(__kindof YIMLoginUser*)loginUser;

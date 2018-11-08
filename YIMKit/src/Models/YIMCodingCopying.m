@@ -8,7 +8,6 @@
 
 #import "YIMCodingCopying.h"
 #import <objc/runtime.h>
-#import "YIMTools.h"
 #import "NSObject+YIMObject.h"
 #import "YYKit.h"
 
