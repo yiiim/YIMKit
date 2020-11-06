@@ -7,6 +7,32 @@
 //
 
 #import "AppDelegate.h"
+#import "YIMModelBase.h"
+#import "YIMSetting.h"
+#import <objc/runtime.h>
+#import "YIMLoginUser.h"
+#import <YYKit.h>
+
+typedef enum : NSUInteger {
+    aa,
+    bb,
+    cc,
+} MyEnum;
+
+struct MyStruct {
+    int a;
+    char *b;
+}MyStruct;
+
+@interface TestModel : YIMSetting
+@property(nonatomic,assign)int abc;
+@property(nonatomic,assign)int b;
+@end
+@implementation TestModel
+-(void)setValue:(id)value forKey:(NSString *)key{
+    [super setValue:value forKey:key];
+}
+@end
 
 @interface AppDelegate ()
 
@@ -16,7 +42,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     return YES;
 }
 
@@ -47,5 +72,8 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"Appdelegate responded");
+}
 
 @end

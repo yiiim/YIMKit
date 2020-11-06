@@ -7,17 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C11CA3020B7A6B40086B3CD /* YbzAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C11CA2F20B7A6B40086B3CD /* YbzAlertView.m */; };
+		5C11CA3620B7A7330086B3CD /* NSBundle+YIMBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C11CA3520B7A7330086B3CD /* NSBundle+YIMBundle.m */; };
+		5C1211B821797E2000598E14 /* UIView+YIMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1211B721797E2000598E14 /* UIView+YIMView.m */; };
+		5C187E85217731BC00474BD8 /* YIMCommonCollectionDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C187E84217731BC00474BD8 /* YIMCommonCollectionDecorationView.m */; };
+		5C2BD86F201C4497002CC573 /* YIMLoginUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2BD86E201C4497002CC573 /* YIMLoginUser.m */; };
+		5C2BD872201C512D002CC573 /* YIMCodingCopying.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2BD871201C512D002CC573 /* YIMCodingCopying.m */; };
+		5C431AE5217734AE0045DA7C /* YIMTableSectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C431AE2217734AE0045DA7C /* YIMTableSectionManager.m */; };
+		5C431AE9217735230045DA7C /* YIMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C431AE7217735230045DA7C /* YIMBaseViewController.m */; };
+		5C431AEE217737AF0045DA7C /* YIMKit.Local.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5C431AED217737AF0045DA7C /* YIMKit.Local.podspec */; };
+		5C431AF3217744A70045DA7C /* YbzError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C431AF2217744A70045DA7C /* YbzError.m */; };
+		5C431AF62177451A0045DA7C /* YIMSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C431AF52177451A0045DA7C /* YIMSetting.m */; };
+		5C69FE2021947CCA00B58D7A /* YIMKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5C69FE1E21947CCA00B58D7A /* YIMKit.podspec */; };
+		5C6F10E72022F792009B6B90 /* NSObject+YIMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6F10E62022F792009B6B90 /* NSObject+YIMObject.m */; };
 		5C99F4132019A709002FACC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F4122019A709002FACC5 /* AppDelegate.m */; };
 		5C99F4162019A709002FACC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F4152019A709002FACC5 /* ViewController.m */; };
 		5C99F4192019A709002FACC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C99F4172019A709002FACC5 /* Main.storyboard */; };
 		5C99F41B2019A70A002FACC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C99F41A2019A709002FACC5 /* Assets.xcassets */; };
 		5C99F41E2019A70A002FACC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C99F41C2019A70A002FACC5 /* LaunchScreen.storyboard */; };
 		5C99F4212019A70A002FACC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F4202019A70A002FACC5 /* main.m */; };
+		5C99F42A2019B17B002FACC5 /* YIMKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C99F4292019B17B002FACC5 /* YIMKit.bundle */; };
+		5C99F42F2019B880002FACC5 /* YIMNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F42E2019B880002FACC5 /* YIMNavigationViewController.m */; };
+		5C99F4332019B9DF002FACC5 /* UIImage+YIMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F4322019B9DF002FACC5 /* UIImage+YIMImage.m */; };
+		5C99F448201AC381002FACC5 /* YIMTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F447201AC381002FACC5 /* YIMTools.m */; };
+		5C99F455201ACFF7002FACC5 /* YbzHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F44F201ACFF7002FACC5 /* YbzHttpResponse.m */; };
+		5C99F456201ACFF7002FACC5 /* YbzHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F450201ACFF7002FACC5 /* YbzHttpRequest.m */; };
+		5C99F457201ACFF7002FACC5 /* YbzHttpResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F451201ACFF7002FACC5 /* YbzHttpResult.m */; };
+		5C99F45E201AD1B4002FACC5 /* YIMModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F45D201AD1B4002FACC5 /* YIMModelBase.m */; };
+		5C99F461201B2A11002FACC5 /* YbzRequestDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F45F201B2A11002FACC5 /* YbzRequestDecorator.m */; };
+		5CE6CCAC20492200004BE36C /* YIMLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE6CCAB20492200004BE36C /* YIMLocationManager.m */; };
 		A467892BB5FA7400C4A017DA /* libPods-YIMKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F99181B2DE224B7F1FBE4022 /* libPods-YIMKit.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5CCDEF7520BBE24400165E45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CCDEF7120BBE24400165E45 /* Keychain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5CCDEF5820BBE23400165E45;
+			remoteInfo = Keychain;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		48CDFC540F6B543C7D823110 /* Pods-YIMKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YIMKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YIMKit/Pods-YIMKit.debug.xcconfig"; sourceTree = "<group>"; };
+		5C11CA2E20B7A6B40086B3CD /* YbzAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YbzAlertView.h; sourceTree = "<group>"; };
+		5C11CA2F20B7A6B40086B3CD /* YbzAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YbzAlertView.m; sourceTree = "<group>"; };
+		5C11CA3420B7A7330086B3CD /* NSBundle+YIMBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YIMBundle.h"; sourceTree = "<group>"; };
+		5C11CA3520B7A7330086B3CD /* NSBundle+YIMBundle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+YIMBundle.m"; sourceTree = "<group>"; };
+		5C1211B521797E2000598E14 /* UIView+YIMView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YIMView.h"; sourceTree = "<group>"; };
+		5C1211B721797E2000598E14 /* UIView+YIMView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YIMView.m"; sourceTree = "<group>"; };
+		5C187E83217731BC00474BD8 /* YIMCommonCollectionDecorationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMCommonCollectionDecorationView.h; sourceTree = "<group>"; };
+		5C187E84217731BC00474BD8 /* YIMCommonCollectionDecorationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMCommonCollectionDecorationView.m; sourceTree = "<group>"; };
+		5C2BD86D201C4497002CC573 /* YIMLoginUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMLoginUser.h; sourceTree = "<group>"; };
+		5C2BD86E201C4497002CC573 /* YIMLoginUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMLoginUser.m; sourceTree = "<group>"; };
+		5C2BD870201C512D002CC573 /* YIMCodingCopying.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMCodingCopying.h; sourceTree = "<group>"; };
+		5C2BD871201C512D002CC573 /* YIMCodingCopying.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMCodingCopying.m; sourceTree = "<group>"; };
+		5C431AE2217734AE0045DA7C /* YIMTableSectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMTableSectionManager.m; sourceTree = "<group>"; };
+		5C431AE4217734AE0045DA7C /* YIMTableSectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMTableSectionManager.h; sourceTree = "<group>"; };
+		5C431AE7217735230045DA7C /* YIMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMBaseViewController.m; sourceTree = "<group>"; };
+		5C431AE8217735230045DA7C /* YIMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMBaseViewController.h; sourceTree = "<group>"; };
+		5C431AED217737AF0045DA7C /* YIMKit.Local.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YIMKit.Local.podspec; sourceTree = "<group>"; };
+		5C431AF0217744A70045DA7C /* YbzError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YbzError.h; sourceTree = "<group>"; };
+		5C431AF1217744A70045DA7C /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		5C431AF2217744A70045DA7C /* YbzError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YbzError.m; sourceTree = "<group>"; };
+		5C431AF42177451A0045DA7C /* YIMSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMSetting.h; sourceTree = "<group>"; };
+		5C431AF52177451A0045DA7C /* YIMSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMSetting.m; sourceTree = "<group>"; };
+		5C69FE1E21947CCA00B58D7A /* YIMKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YIMKit.podspec; sourceTree = SOURCE_ROOT; };
+		5C6F10E52022F792009B6B90 /* NSObject+YIMObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YIMObject.h"; sourceTree = "<group>"; };
+		5C6F10E62022F792009B6B90 /* NSObject+YIMObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YIMObject.m"; sourceTree = "<group>"; };
 		5C99F40E2019A709002FACC5 /* YIMKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YIMKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C99F4112019A709002FACC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5C99F4122019A709002FACC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,6 +86,28 @@
 		5C99F41D2019A70A002FACC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C99F41F2019A70A002FACC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C99F4202019A70A002FACC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5C99F4292019B17B002FACC5 /* YIMKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YIMKit.bundle; sourceTree = "<group>"; };
+		5C99F42D2019B880002FACC5 /* YIMNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMNavigationViewController.h; sourceTree = "<group>"; };
+		5C99F42E2019B880002FACC5 /* YIMNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMNavigationViewController.m; sourceTree = "<group>"; };
+		5C99F4312019B9DF002FACC5 /* UIImage+YIMImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+YIMImage.h"; sourceTree = "<group>"; };
+		5C99F4322019B9DF002FACC5 /* UIImage+YIMImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YIMImage.m"; sourceTree = "<group>"; };
+		5C99F446201AC381002FACC5 /* YIMTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMTools.h; sourceTree = "<group>"; };
+		5C99F447201AC381002FACC5 /* YIMTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMTools.m; sourceTree = "<group>"; };
+		5C99F44E201ACFF6002FACC5 /* YbzHttpNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YbzHttpNetworking.h; sourceTree = "<group>"; };
+		5C99F44F201ACFF7002FACC5 /* YbzHttpResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YbzHttpResponse.m; sourceTree = "<group>"; };
+		5C99F450201ACFF7002FACC5 /* YbzHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YbzHttpRequest.m; sourceTree = "<group>"; };
+		5C99F451201ACFF7002FACC5 /* YbzHttpResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YbzHttpResult.m; sourceTree = "<group>"; };
+		5C99F452201ACFF7002FACC5 /* YbzHttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YbzHttpResponse.h; sourceTree = "<group>"; };
+		5C99F453201ACFF7002FACC5 /* YbzHttpResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YbzHttpResult.h; sourceTree = "<group>"; };
+		5C99F454201ACFF7002FACC5 /* YbzHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YbzHttpRequest.h; sourceTree = "<group>"; };
+		5C99F45C201AD1B4002FACC5 /* YIMModelBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMModelBase.h; sourceTree = "<group>"; };
+		5C99F45D201AD1B4002FACC5 /* YIMModelBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMModelBase.m; sourceTree = "<group>"; };
+		5C99F45F201B2A11002FACC5 /* YbzRequestDecorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YbzRequestDecorator.m; sourceTree = "<group>"; };
+		5C99F460201B2A11002FACC5 /* YbzRequestDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YbzRequestDecorator.h; sourceTree = "<group>"; };
+		5CCDEF4120BBA25E00165E45 /* YIMKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMKit.h; sourceTree = "<group>"; };
+		5CCDEF7120BBE24400165E45 /* Keychain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Keychain.xcodeproj; path = Keychain/Keychain.xcodeproj; sourceTree = "<group>"; };
+		5CE6CCAA20492200004BE36C /* YIMLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMLocationManager.h; sourceTree = "<group>"; };
+		5CE6CCAB20492200004BE36C /* YIMLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMLocationManager.m; sourceTree = "<group>"; };
 		E09EB5C092056F8472C91C23 /* Pods-YIMKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YIMKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-YIMKit/Pods-YIMKit.release.xcconfig"; sourceTree = "<group>"; };
 		F99181B2DE224B7F1FBE4022 /* libPods-YIMKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YIMKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -52,6 +132,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5C187E812177319800474BD8 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				5C187E83217731BC00474BD8 /* YIMCommonCollectionDecorationView.h */,
+				5C187E84217731BC00474BD8 /* YIMCommonCollectionDecorationView.m */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		5C431AE6217735230045DA7C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5C431AE8217735230045DA7C /* YIMBaseViewController.h */,
+				5C431AE7217735230045DA7C /* YIMBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5C431AEA217737720045DA7C /* cocopod */ = {
+			isa = PBXGroup;
+			children = (
+				5C69FE1E21947CCA00B58D7A /* YIMKit.podspec */,
+				5C431AED217737AF0045DA7C /* YIMKit.Local.podspec */,
+			);
+			path = cocopod;
+			sourceTree = "<group>";
+		};
+		5C431AEF217744A70045DA7C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5C431AF1217744A70045DA7C /* Define.h */,
+				5C431AF0217744A70045DA7C /* YbzError.h */,
+				5C431AF2217744A70045DA7C /* YbzError.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		5C99F4052019A709002FACC5 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +190,8 @@
 		5C99F4102019A709002FACC5 /* YIMKit */ = {
 			isa = PBXGroup;
 			children = (
+				5C431AEA217737720045DA7C /* cocopod */,
+				5CCDEF4E20BBE1F900165E45 /* samples */,
 				5C99F4282019AB1D002FACC5 /* resource */,
 				5C99F4272019A723002FACC5 /* src */,
 				5C99F4112019A709002FACC5 /* AppDelegate.h */,
@@ -91,6 +210,12 @@
 		5C99F4272019A723002FACC5 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				5C431AEF217744A70045DA7C /* Common */,
+				5CCDEF3F20BBA25E00165E45 /* Header */,
+				5C99F458201AD13F002FACC5 /* Models */,
+				5C99F44D201ACFDB002FACC5 /* Request */,
+				5C99F4342019BA58002FACC5 /* Tool */,
+				5C99F42C2019B808002FACC5 /* UI */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -98,8 +223,106 @@
 		5C99F4282019AB1D002FACC5 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				5C99F4292019B17B002FACC5 /* YIMKit.bundle */,
 			);
 			path = resource;
+			sourceTree = "<group>";
+		};
+		5C99F42C2019B808002FACC5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5C431AE6217735230045DA7C /* Base */,
+				5C187E812177319800474BD8 /* UICollectionView */,
+				5C99F4302019B9CB002FACC5 /* Categorys */,
+				5C11CA2E20B7A6B40086B3CD /* YbzAlertView.h */,
+				5C11CA2F20B7A6B40086B3CD /* YbzAlertView.m */,
+				5C431AE4217734AE0045DA7C /* YIMTableSectionManager.h */,
+				5C431AE2217734AE0045DA7C /* YIMTableSectionManager.m */,
+				5C99F42D2019B880002FACC5 /* YIMNavigationViewController.h */,
+				5C99F42E2019B880002FACC5 /* YIMNavigationViewController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5C99F4302019B9CB002FACC5 /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				5C1211B521797E2000598E14 /* UIView+YIMView.h */,
+				5C1211B721797E2000598E14 /* UIView+YIMView.m */,
+				5C99F4312019B9DF002FACC5 /* UIImage+YIMImage.h */,
+				5C99F4322019B9DF002FACC5 /* UIImage+YIMImage.m */,
+				5C11CA3420B7A7330086B3CD /* NSBundle+YIMBundle.h */,
+				5C11CA3520B7A7330086B3CD /* NSBundle+YIMBundle.m */,
+			);
+			path = Categorys;
+			sourceTree = "<group>";
+		};
+		5C99F4342019BA58002FACC5 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				5C99F446201AC381002FACC5 /* YIMTools.h */,
+				5C99F447201AC381002FACC5 /* YIMTools.m */,
+				5CE6CCAA20492200004BE36C /* YIMLocationManager.h */,
+				5CE6CCAB20492200004BE36C /* YIMLocationManager.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		5C99F44D201ACFDB002FACC5 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				5C99F44E201ACFF6002FACC5 /* YbzHttpNetworking.h */,
+				5C99F454201ACFF7002FACC5 /* YbzHttpRequest.h */,
+				5C99F450201ACFF7002FACC5 /* YbzHttpRequest.m */,
+				5C99F452201ACFF7002FACC5 /* YbzHttpResponse.h */,
+				5C99F44F201ACFF7002FACC5 /* YbzHttpResponse.m */,
+				5C99F453201ACFF7002FACC5 /* YbzHttpResult.h */,
+				5C99F451201ACFF7002FACC5 /* YbzHttpResult.m */,
+				5C99F460201B2A11002FACC5 /* YbzRequestDecorator.h */,
+				5C99F45F201B2A11002FACC5 /* YbzRequestDecorator.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		5C99F458201AD13F002FACC5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C431AF42177451A0045DA7C /* YIMSetting.h */,
+				5C431AF52177451A0045DA7C /* YIMSetting.m */,
+				5C99F45C201AD1B4002FACC5 /* YIMModelBase.h */,
+				5C99F45D201AD1B4002FACC5 /* YIMModelBase.m */,
+				5C2BD86D201C4497002CC573 /* YIMLoginUser.h */,
+				5C2BD86E201C4497002CC573 /* YIMLoginUser.m */,
+				5C2BD870201C512D002CC573 /* YIMCodingCopying.h */,
+				5C2BD871201C512D002CC573 /* YIMCodingCopying.m */,
+				5C6F10E52022F792009B6B90 /* NSObject+YIMObject.h */,
+				5C6F10E62022F792009B6B90 /* NSObject+YIMObject.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5CCDEF3F20BBA25E00165E45 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				5CCDEF4120BBA25E00165E45 /* YIMKit.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		5CCDEF4E20BBE1F900165E45 /* samples */ = {
+			isa = PBXGroup;
+			children = (
+				5CCDEF7120BBE24400165E45 /* Keychain.xcodeproj */,
+			);
+			path = samples;
+			sourceTree = "<group>";
+		};
+		5CCDEF7220BBE24400165E45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CCDEF7620BBE24400165E45 /* Keychain.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		DA5DBB351588DAFC8A90DB1F /* Pods */ = {
@@ -122,8 +345,6 @@
 				5C99F40A2019A709002FACC5 /* Sources */,
 				5C99F40B2019A709002FACC5 /* Frameworks */,
 				5C99F40C2019A709002FACC5 /* Resources */,
-				B654058D0E492330AB73D9D1 /* [CP] Embed Pods Frameworks */,
-				469DC9ED7A8A20A93EA7CF6D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +381,12 @@
 			mainGroup = 5C99F4052019A709002FACC5;
 			productRefGroup = 5C99F40F2019A709002FACC5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5CCDEF7220BBE24400165E45 /* Products */;
+					ProjectRef = 5CCDEF7120BBE24400165E45 /* Keychain.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5C99F40D2019A709002FACC5 /* YIMKit */,
@@ -167,14 +394,27 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		5CCDEF7620BBE24400165E45 /* Keychain.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Keychain.app;
+			remoteRef = 5CCDEF7520BBE24400165E45 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		5C99F40C2019A709002FACC5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C99F42A2019B17B002FACC5 /* YIMKit.bundle in Resources */,
 				5C99F41E2019A70A002FACC5 /* LaunchScreen.storyboard in Resources */,
 				5C99F41B2019A70A002FACC5 /* Assets.xcassets in Resources */,
 				5C99F4192019A709002FACC5 /* Main.storyboard in Resources */,
+				5C431AEE217737AF0045DA7C /* YIMKit.Local.podspec in Resources */,
+				5C69FE2021947CCA00B58D7A /* YIMKit.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,39 +439,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		469DC9ED7A8A20A93EA7CF6D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-YIMKit/Pods-YIMKit-resources.sh",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YIMKit/Pods-YIMKit-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B654058D0E492330AB73D9D1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YIMKit/Pods-YIMKit-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -239,8 +446,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C11CA3020B7A6B40086B3CD /* YbzAlertView.m in Sources */,
+				5C99F461201B2A11002FACC5 /* YbzRequestDecorator.m in Sources */,
+				5C99F455201ACFF7002FACC5 /* YbzHttpResponse.m in Sources */,
 				5C99F4162019A709002FACC5 /* ViewController.m in Sources */,
 				5C99F4212019A70A002FACC5 /* main.m in Sources */,
+				5C187E85217731BC00474BD8 /* YIMCommonCollectionDecorationView.m in Sources */,
+				5C431AF62177451A0045DA7C /* YIMSetting.m in Sources */,
+				5C99F42F2019B880002FACC5 /* YIMNavigationViewController.m in Sources */,
+				5C431AE5217734AE0045DA7C /* YIMTableSectionManager.m in Sources */,
+				5C2BD872201C512D002CC573 /* YIMCodingCopying.m in Sources */,
+				5CE6CCAC20492200004BE36C /* YIMLocationManager.m in Sources */,
+				5C431AF3217744A70045DA7C /* YbzError.m in Sources */,
+				5C99F4332019B9DF002FACC5 /* UIImage+YIMImage.m in Sources */,
+				5C2BD86F201C4497002CC573 /* YIMLoginUser.m in Sources */,
+				5C6F10E72022F792009B6B90 /* NSObject+YIMObject.m in Sources */,
+				5C99F45E201AD1B4002FACC5 /* YIMModelBase.m in Sources */,
+				5C431AE9217735230045DA7C /* YIMBaseViewController.m in Sources */,
+				5C1211B821797E2000598E14 /* UIView+YIMView.m in Sources */,
+				5C99F457201ACFF7002FACC5 /* YbzHttpResult.m in Sources */,
+				5C99F456201ACFF7002FACC5 /* YbzHttpRequest.m in Sources */,
+				5C11CA3620B7A7330086B3CD /* NSBundle+YIMBundle.m in Sources */,
+				5C99F448201AC381002FACC5 /* YIMTools.m in Sources */,
 				5C99F4132019A709002FACC5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,7 +542,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -364,7 +591,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -377,7 +604,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2Q5KU2HBEN;
+				DEVELOPMENT_TEAM = F7PMC496QG;
 				INFOPLIST_FILE = YIMKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ybzhome.com.YIMKit;
@@ -392,7 +619,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2Q5KU2HBEN;
+				DEVELOPMENT_TEAM = F7PMC496QG;
 				INFOPLIST_FILE = YIMKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ybzhome.com.YIMKit;
