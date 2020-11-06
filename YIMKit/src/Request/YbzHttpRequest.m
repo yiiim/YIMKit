@@ -228,8 +228,11 @@ static dispatch_group_t af_complete_group;
     request = [self requestByYbzHttpRequest:request];
     _rawUrl = request.URL;
     YbzHttpRequestResult *result = [[YbzHttpRequestResult alloc]initWithAfnManager:manager identity:_requestIdentity];
-    
-    NSURLSessionDataTask* task = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+    NSURLSessionDataTask* task = [manager dataTaskWithRequest:request uploadProgress:^(NSProgress * _Nonnull uploadProgress) {
+            
+    } downloadProgress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
         [result afDataTaskCompletion:response responseObject:responseObject error:error];
     }];
     
